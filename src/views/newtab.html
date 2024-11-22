@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../style/newtab.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lex-tension</title>
+	<link rel="stylesheet" href="../style/bootstrap.min.css">
+	<link rel="stylesheet" href="../style/newtab.css">
+	<script src="../components/search-widget.js"></script>
+	<script src="../components/visitedUrls/visited-urls.js"></script>
 </head>
-<body>
-    
-    <h1>Bienvenido a tu nueva pestaña personalizada!</h1>
-    <!-- Contenido de tu nueva pestaña -->
-    <script src="../js/newtab.js"></script>
+
+<body class="p-3 mb-2 bg-light text-dark">
+	<div class="container">
+		<h2 id="greeting" class="display-4"></h2>
+		<!-- El resto de tu contenido ... -->
+		<search-widget />
+	</div>
+	<div class="container">
+		<h3>====</h3>
+		<visited-urls></visited-urls>
+	</div>
+	<!-- Contenido de tu nueva pestaña -->
+	<script src="../js/newtab.js"></script>
 </body>
+
 </html>

@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Gestor de Widgets Qwik</title>
-    <style>
-      /* Tus estilos van aquí */
-    </style>
-  </head>
-  <body>
-    <!-- Componentes de la UI para interactuar con tus widgets -->
-    <button id="toggle-widget">Toggle Widget</button>
+<html lang="en">
 
-    <script src="../js/popup.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuración de la Extensión</title>
+  <link rel="stylesheet" href="../style/bootstrap.min.css">
+</head>
+
+<body class="p-3 mb-2 bg-light text-dark">
+  <div class="container">
+    <h1 class="h3 mb-3 font-weight-normal">Configuración</h1>
+    <div id="welcome-message" style="display: none;">
+      <span id="user-name"></span>
+      <a href="#" id="not-you-link">No eres tú?</a>
+    </div>
+    <form class="form">
+      <div class="form-control">
+        <input type="file" id="background-uploader" accept="image/*">
+        <button id="save-background">Guardar Imagen</button>
+      </div>
+    </form>
+    <div id="name-input" style="display: none;">
+      <input type="text" id="username" placeholder="Ingresa tu nombre" />
+      <button id="save">Guardar</button>
+    </div>
+  </div>
+  <script src="../js/popup.js"></script>
+</body>
+
 </html>
