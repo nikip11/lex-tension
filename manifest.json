@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Lex-tension",
+    "description": "descripción",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "bookmarks",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "src/views/popup.html",
+        "default_icon": {
+            "16": "src/shares/images/icon16.png",
+            "48": "src/shares/images/icon48.png",
+            "128": "src/shares/images/icon128.png"
+        }
+    },
+    "chrome_url_overrides": {
+        "newtab": "src/views/newtab.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "src/js/contentScript.js"
+            ]
+        }
+    ]
+}
